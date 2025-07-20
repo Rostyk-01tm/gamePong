@@ -101,22 +101,7 @@ function love.draw()
 
     if gameState == "menu" then
         menuD()
-        -- love.graphics.printf("PONG", 0, HEIGHT / 6, WIDTH, "center")
         
-        -- -- START
-        -- love.graphics.rectangle("line", WIDTH / 2 - 100, HEIGHT / 2 - 50, 200, 50)
-        -- love.graphics.printf("START", 0, HEIGHT / 2 - 35, WIDTH, "center")
-
-        -- -- EXIT
-        -- love.graphics.rectangle("line", WIDTH / 2 - 100, HEIGHT / 2 + 20, 200, 50)
-        -- love.graphics.printf("EXIT", 0, HEIGHT / 2 + 35, WIDTH, "center")
-
-        
-        -- if score1 >= maxScore then
-        --     love.graphics.printf("Гравець 1 переміг!", 0, 400, 800, "center")
-        -- elseif score2 >= maxScore then
-        --     love.graphics.printf("Гравець 2 переміг!", 0, 400, 800, "center")
-        -- end
     elseif gameState == "play" then
         -- Ракетки
         love.graphics.rectangle("fill", paddle1.x, paddle1.y, paddle1.width, paddle1.height)
