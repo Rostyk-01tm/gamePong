@@ -5,6 +5,8 @@ local gameState = "menu"
 HEIGHT = 600
 WIDTH = 800
 
+local config = require("config")
+
 -- Ракетки
 local paddle1 = {x = 30, y = HEIGHT/2 - 40, width = WIDTH/80, height = HEIGHT/7.5, speed = 300}
 local paddle2 = {x = WIDTH - 40, y = HEIGHT/2 - 40, width = WIDTH/80, height = HEIGHT/7.5, speed = 300}
